@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background">
+
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:shapeAppearanceOverlay="@style/Circle"
+                    android:src="@drawable/abbas_alsbihawi"
+                    android:layout_margin="@dimen/marginLarge"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/abbas"
+                    app:shapeAppearanceOverlay="@style/Circle"
+                    android:layout_margin="@dimen/marginLarge"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:shapeAppearanceOverlay="@style/Circle"
+                    android:src="@drawable/abbas_anime_character"
+                    android:layout_margin="@dimen/marginLarge"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:shapeAppearanceOverlay="@style/Circle"
+                    android:src="@drawable/abbas_alsbihawi"
+                    android:layout_margin="@dimen/marginLarge"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:shapeAppearanceOverlay="@style/Circle"
+                    android:src="@drawable/abbas"
+                    android:layout_margin="@dimen/marginLarge"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:shapeAppearanceOverlay="@style/Circle"
+                    android:src="@drawable/abbas_anime_character"
+                    android:layout_margin="@dimen/marginLarge"
+                    />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:layout_margin="@dimen/marginLarge"
+                android:src="@drawable/abbas_alsbihawi" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:src="@drawable/abbas"
+                android:layout_margin="@dimen/marginLarge"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:src="@drawable/abbas_anime_character"
+                android:layout_margin="@dimen/marginLarge"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:src="@drawable/abbas_alsbihawi"
+                android:layout_margin="@dimen/marginLarge"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:src="@drawable/abbas"
+                android:layout_margin="@dimen/marginLarge"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:src="@drawable/abbas_anime_character"
+                android:layout_margin="@dimen/marginLarge"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
