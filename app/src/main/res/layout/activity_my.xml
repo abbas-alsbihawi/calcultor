@@ -1,23 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textview1" />
+    android:padding="@dimen/paddingLarge"
+    android:id="@+id/constraint_layout_activity"
+    >
 
     <Button
-        android:id="@+id/myButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/button_my_clickable"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:text="@string/button"
-        android:textColor="#000000"
-        tools:ignore="TextContrastCheck" />
-</LinearLayout>
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_three" />
+
+    <EditText
+        android:id="@+id/text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dark"
+        app:layout_constraintBottom_toTopOf="@+id/checkbox_one"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/checkbox_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="one"
+        app:layout_constraintBottom_toTopOf="@+id/checkbox_two"
+        app:layout_constraintTop_toBottomOf="@+id/switch_theme"
+        tools:layout_editor_absoluteX="158dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Two"
+        app:layout_constraintBottom_toTopOf="@+id/checkbox_three"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_one" />
+
+    <CheckBox
+        android:id="@+id/checkbox_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Three"
+        app:layout_constraintBottom_toTopOf="@+id/button_my_clickable"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_two"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/switch_theme"
+        app:layout_constraintTop_toBottomOf="@+id/text_username"
+        tools:layout_editor_absoluteX="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_button_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radio_button_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
